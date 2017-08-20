@@ -48,7 +48,7 @@ feature is a good idea for hub if it improves some workflow for a GitHub user.
 
 ## How to write tests
 
-The new test suite is written in Cucumber under `features/` directory. Each
+The new test suite is written in Cucumber. using Aruba, under the `features/` directory. Each
 scenario is actually making real invocations to `hub` on the command-line in the
 context of a real (dynamically created) git repository.
 
@@ -68,3 +68,7 @@ Given the GitHub API server:
 
 The best way to learn to write new tests is to study the existing scenarios for
 commands that are similar to those that you want to add or change.
+
+When debugging, you can set the HUB_VERBOSE environment variable to view executed git commands
+and http requests.
+
